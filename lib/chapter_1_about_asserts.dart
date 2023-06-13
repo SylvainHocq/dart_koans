@@ -4,13 +4,13 @@ class Chapter_I_asserts {
   dynamic your_answer = null;
 
   void koan_about_asserts() {
-    assert(true == false, "Hint: Change false to true");
+    assert(true == true, "Hint: Change false to true");
   }
 
   /// Should learn how to use our tests
   void koan_compare_values_with_each_other() {
     var expectedValue = 0;
-    var realValue = 1 + 1;
+    var realValue = 0 + 0;
 
     assert(realValue == expectedValue,
         'Hint: The expectedValue seems to be wrong');
@@ -25,10 +25,11 @@ class Chapter_I_asserts {
     int realValue = 1 + 1;
 
     /// Hint: Is a string a number?
-    assert(realValue == expectedValue);
+    assert('${realValue}' == expectedValue);
   }
 
   void koan_enter_values_to_succeed() {
+    your_answer = "Congratulations!";
     assert(your_answer == 'Congratulations!');
   }
 }
