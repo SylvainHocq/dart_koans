@@ -3,10 +3,15 @@ import 'dart:mirrors';
 import 'package:ansicolor/ansicolor.dart';
 import 'package:dart_koans/chapter_1_about_asserts.dart';
 import 'package:dart_koans/chapter_2_about_string.dart';
+import 'package:dart_koans/chapter_3_about_variables.dart';
 
 void main() {
   ansiColorDisabled = false;
-  List<Type> runnableChapters = [Chapter_I_asserts, Chapter_II_about_string];
+  List<Type> runnableChapters = [
+    Chapter_I_asserts,
+    Chapter_II_about_string,
+    Chapter_III_about_variables,
+  ];
   bool isError = false;
   int classIndex = 0;
 
