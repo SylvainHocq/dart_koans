@@ -1,6 +1,8 @@
 import 'dart:math';
 import 'dart:typed_data';
 
+import 'Point.dart';
+
 class Chapter_III_about_variables {
 // https://dart.dev/language/variables
 
@@ -117,24 +119,4 @@ class Chapter_III_about_variables {
     // myObj2.x = 1;   //error at compil, 'x' can't be used as a setter because it's final.
   }
 
-}
-
-class PointMutable<T extends num> {
-  T x;
-  T y;
-  PointMutable(T x, T y)
-      : this.x = x,
-        this.y = y;
-}
-
-class PointImmutable<T extends num> {
-  final T x;
-  final T y;
-
-  /// Creates a point with the provided [x] and [y] coordinates.
-  const PointImmutable(T x, T y)
-      : this.x = x,
-        this.y = y;
-
-  String toString() => 'Point($x, $y)';
 }

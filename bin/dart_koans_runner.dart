@@ -4,6 +4,7 @@ import 'package:ansicolor/ansicolor.dart';
 import 'package:dart_koans/chapter_1_about_asserts.dart';
 import 'package:dart_koans/chapter_2_about_string.dart';
 import 'package:dart_koans/chapter_3_about_variables.dart';
+import 'package:dart_koans/chapter_4_about_operators.dart';
 
 void main() {
   ansiColorDisabled = false;
@@ -11,6 +12,7 @@ void main() {
     Chapter_I_asserts,
     Chapter_II_about_string,
     Chapter_III_about_variables,
+    Chapter_IV_about_operators
   ];
   bool isError = false;
   int classIndex = 0;
